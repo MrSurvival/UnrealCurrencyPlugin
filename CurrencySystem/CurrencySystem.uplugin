@@ -1,0 +1,40 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "0.1",
+	"FriendlyName": "Currency",
+	"Description": "The Currency Plugin adds support for assigning currencies to actors and automatically displaying them in the player's UI. Currency values can be saved using the companion SaveGameManager plugin.",
+	"Category": "Voxelgate",
+	"CreatedBy": "Florian Nordmann",
+	"CreatedByURL": "https://florian-nordmann.de",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"EngineVersion": "5.5.0",
+	"CanContainContent": true,
+	"IsBetaVersion": true,
+	"Installed": true,
+	"Modules": [
+		{
+			"Name": "CurrencySystem",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		},
+		{
+			"Name": "CurrencySystemEditor",
+			"Type": "Editor",
+			"LoadingPhase": "PostEngineInit"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "CommonUI",
+			"Enabled": true
+		},
+		{
+			"Name": "SaveGameManager",
+			"Enabled": true,
+			"Optional": true
+		}
+	]
+}
